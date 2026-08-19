@@ -1,0 +1,28 @@
+{
+	"genericName": "The Agoge",
+	"specificName": {
+		"spart": "Agōga"
+	},
+	"description": "Under the Constitution written by the mythical law-giver Lycurgus, the institution of The Agoge was established, where Spartans were trained from the age of 6 to be superior warriors in defense of the Spartan state.",
+	"cost": {
+		"food": 200,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "spart" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "agoge.png",
+	"researchTime": 40,
+	"tooltip": "Spartiate Hoplites and Phalangites +10% health and cost −1 population, but +20% increased train time. Unlocks “Krypteia.”",
+	"modifications": [
+		{ "value": "Cost/Population", "add": -1 },
+		{ "value": "Health/Max", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 1.2 }
+	],
+	"affects": ["Spartiates"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

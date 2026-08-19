@@ -1,0 +1,19 @@
+{
+	"genericName": "State Religion",
+	"supersedes": "temple/healer_gather_glory",
+	"description": ".",
+	"cost": {
+		"coin": 500,
+		"glory": 500
+	},
+	"requirements": { "tech": "phase_empire" },
+	"requirementsTooltip": "Unlocked in Empire Phase. Requires “Entrenched Priesthood.”",
+	"icon": "deification.png",
+	"researchTime": 30,
+	"tooltip": "Heroes and Healers +25% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"affects": ["Hero", "Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

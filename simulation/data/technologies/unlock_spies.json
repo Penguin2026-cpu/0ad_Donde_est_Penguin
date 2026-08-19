@@ -1,0 +1,15 @@
+{
+	"genericName": "Espionage",
+	"description": "Merchants' first goal was trading, but they also gathered information about the countries they crossed.",
+	"cost": {
+		"coin": 500
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "spy_trader.png",
+	"researchTime": 40,
+	"tooltip": "Unlock the ability to bribe enemy citizens and see their vision for 30 seconds. Does not affect Champions, Heroes, or Mechanical units.",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

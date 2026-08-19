@@ -1,0 +1,19 @@
+{
+	"pair": "market/pair_market_01",
+	"genericName": "Social Contract",
+	"description": ".",
+	"cost": {
+		"glory": 400
+	},
+	"requirements": {
+		"tech": "civic_center/unlock_shared_los"
+	},
+	"requirementsTooltip": "Requires “Cartography.”",
+	"icon": "handshake.png",
+	"researchTime": 40,
+	"tooltip": "Unlock the ability to use allied dropsites for your citizens to deposit resources.",
+	"modifications": [
+		{ "value": "Player/sharedDropsites", "replace": true }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

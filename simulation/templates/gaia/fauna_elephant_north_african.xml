@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_defensive_elephant">
+  <Footprint replace="">
+    <Square width="4" depth="8"/>
+    <Height>6</Height>
+  </Footprint>
+  <Health>
+    <Max>300</Max>
+  </Health>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>North African Elephant</GenericName>
+    <SpecificName>Loxodonta africana pharaoensis</SpecificName>
+    <Icon>gaia/fauna_elephant_african_bush_1.png</Icon>
+  </Identity>
+  <ResourceSupply>
+    <Max>500</Max>
+  </ResourceSupply>
+  <VisualActor>
+    <Actor>fauna/elephant_african_forest.xml</Actor>
+  </VisualActor>
+</Entity>

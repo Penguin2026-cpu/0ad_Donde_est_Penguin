@@ -1,0 +1,21 @@
+{
+	"genericName": "Leather Body Armor",
+	"specificName": {
+		"generic": "Spolas"
+	},
+	"description": "Body armor for soldiers, made from layers of leather stitched and/or glued together.",
+	"cost": {
+		"food": 400,
+		"glory": 200
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "armor_leather.png",
+	"researchTime": 60,
+	"tooltip": "Infantry and Cavalry +1 hack armor level. Unlocks “Laminated Linen Body Armor.”",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1.0 }
+	],
+	"affects": ["Soldier !Elephant"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

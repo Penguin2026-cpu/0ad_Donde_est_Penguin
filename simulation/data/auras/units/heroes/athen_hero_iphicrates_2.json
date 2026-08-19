@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Soldier !Hoplite"],
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "multiply": 0.75 }
+	],
+	"auraName": "Drill and Discpline",
+	"auraDescription": "All Citizen Soldiers (except Hoplites) −25% experience required to gain higher rank while Iphicrates lives."
+}

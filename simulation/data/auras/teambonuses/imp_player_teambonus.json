@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["CivicCenter"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 },
+		{ "value": "Capturable/CapturePoints", "multiply": 0.9 }
+	],
+	"auraName": "Client-States",
+	"auraDescription": "Allied Civic Centers +25% health, but −10% capture points."
+}

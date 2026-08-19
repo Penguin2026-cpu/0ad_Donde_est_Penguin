@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource">
+  <AutoBuildable>
+    <Rate>1.0</Rate>
+  </AutoBuildable>
+  <BuildRestrictions>
+    <Territory>own neutral</Territory>
+    <Category>Field</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>200</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="28.0" depth="28.0"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_field</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Grain Field</GenericName>
+    <SpecificName>Grain Field</SpecificName>
+    <VisibleClasses datatype="tokens">Grain Field DiminishingReturns</VisibleClasses>
+    <Classes datatype="tokens">-NotField</Classes>
+    <SelectionGroupName>template_structure_resource_field</SelectionGroupName>
+    <Tooltip>Build in neutral or own territory to harvest grain for food. Sow near a captured Farmstead to gain a +100% farming boost (“Farmland” aura) and +50% health (“Fertile Soil”). Fields planted around Civic Centers are −50% less efficient (“Civic Spaces”). There is a diminishing return effect where it is more efficient to use fewer gatherers per field if space permits.</Tooltip>
+    <Icon>structures/field.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>100</food>
+    <glory>10</glory>
+  </Loot>
+  <Minimap>
+    <Color r="119" g="82" b="46"/>
+  </Minimap>
+  <Obstruction>
+    <Static width="24.0" depth="24.0"/>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+  </Obstruction>
+  <ProductionQueue disable=""/>
+  <RallyPoint disable=""/>
+  <Researcher disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Crush>10</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceSupply>
+    <KillBeforeGather>false</KillBeforeGather>
+    <Max>Infinity</Max>
+    <Type>food.grain</Type>
+    <MaxGatherers>5</MaxGatherers>
+    <DiminishingReturns>0.90</DiminishingReturns>
+  </ResourceSupply>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>0.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>6000</Interval>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_field.xml</select>
+      <constructed>interface/complete/building/complete_field.xml</constructed>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay disable=""/>
+  <Trainer disable=""/>
+  <Vision>
+    <Range>0</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/plot_field_temp.xml</Actor>
+    <FoundationActor>structures/plot_field_found.xml</FoundationActor>
+    <SelectionShape>
+      <Footprint/>
+    </SelectionShape>
+  </VisualActor>
+</Entity>

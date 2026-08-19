@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Champion", "Cavalry"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.85 }
+	],
+	"auraName": "Deinomenid Elitism",
+	"auraDescription": "Champions and Cavalry −15% training time."
+}

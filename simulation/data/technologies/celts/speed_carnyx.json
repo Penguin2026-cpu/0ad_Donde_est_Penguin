@@ -1,0 +1,25 @@
+{
+	"genericName": "Noise Makers",
+	"specificName": {
+		"celt": "Carnyx",
+		"brit": "Carnyx",
+		"gaul": "Carnyx"
+	},
+	"description": "The carnyx was a type of trumpet with a loud droning sound used in battle to frighten enemy soldiers.",
+	"cost": {
+		"metal": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"tech": "phase_town"
+	},
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "carnyx.png",
+	"researchTime": 40,
+	"tooltip": "All Infantry and Cavalry +10% walk and run speed. Unlocks the Carnyx Player at the Assembly.",
+	"modifications": [
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 }
+	],
+	"affects": ["Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

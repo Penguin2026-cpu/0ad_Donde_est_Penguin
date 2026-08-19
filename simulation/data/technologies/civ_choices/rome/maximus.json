@@ -1,0 +1,21 @@
+{
+	"genericName": "Quintus Fabius Maximus",
+	"description": "Quintus Fabius Maximus.",
+	"icon": "civ_choices/rome_hero_maximus.png",
+	"tooltip": "Select Quintus Fabius Maximus to lead your civilization.",
+	"requirements": {
+		"civ": "rome"
+	},
+	"modifications": [
+		{
+			"value": "Trainer/Entities/_string",
+			"tokens": "-units/{civ}/hero_marcellus_infantry -units/{civ}/hero_scipio_infantry",
+			"affects": "CivilCentre"
+		},
+		{
+			"value": "Researcher/Technologies/_string",
+			"tokens": "romans/health_maximus",
+			"affects": "CivilCentre"
+		}
+	]
+}

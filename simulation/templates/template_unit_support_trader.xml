@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+  <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>100</food>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="4.0" depth="8.0"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">-ConquestCritical IdleWorker</Classes>
+    <VisibleClasses datatype="tokens">Citizen Trader TaxPayer</VisibleClasses>
+    <GenericName>Trader</GenericName>
+    <Tooltip>Trade resources between your own markets and those of your allies.</Tooltip>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>5</TurnRate>
+  </Position>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>1.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>ellipse/128x256.png</MainTexture>
+        <MainTextureMask>ellipse/128x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_trade>voice/{lang}/civ/civ_{phenotype}_trade.xml</order_trade>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{phenotype}_death.xml</death>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+    </SoundGroups>
+  </Sound>
+  <Trader>
+    <GainMultiplier>1.0</GainMultiplier>
+  </Trader>
+  <TrainingRestrictions>
+    <Category>Trader</Category>
+  </TrainingRestrictions>
+  <UnitAI>
+    <CanGuard>false</CanGuard>
+    <CanPatrol>false</CanPatrol>
+    <Formations disable=""/>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.7</WalkSpeed>
+  </UnitMotion>
+</Entity>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Capturable>
+    <CapturePoints>500</CapturePoints>
+  </Capturable>
+  <Health disable=""/>
+  <Identity>
+    <GenericName>Trading Post</GenericName>
+    <VisibleClasses datatype="tokens">
+      TradingPost
+      Permanent
+    </VisibleClasses>
+    <Classes datatype="tokens">
+      -CaptureResistant
+      CapturableBuilding
+    </Classes>
+    <Undeletable>true</Undeletable>
+  </Identity>
+  <Minimap>
+    <Type>structure</Type>
+    <Icon size="16.0">other.png</Icon>
+  </Minimap>
+  <Researcher>
+    <Technologies datatype="tokens">
+      -market/training_trader_01
+      -market/speed_trader_01
+      -market/pair_market_01
+      -market/unlock_slaves
+      -market/market_taxes
+      -romans/special_roman_roads
+      training_slave_trade
+    </Technologies>
+  </Researcher>
+  <Resistance replace=""/>
+  <Selectable>
+    <Overlay>
+      <Outline>
+        <LineTexture>outline_border_02.png</LineTexture>
+        <LineTextureMask>outline_border_02_mask.png</LineTextureMask>
+        <LineThickness>0.5</LineThickness>
+      </Outline>
+    </Overlay>
+  </Selectable>
+  <TerritoryDecay disable=""/>
+  <TerritoryInfluence disable=""/>
+  <VisualActor>
+    <FoundationActor>structures/fndn_5x5.xml</FoundationActor>
+  </VisualActor>
+</Entity>

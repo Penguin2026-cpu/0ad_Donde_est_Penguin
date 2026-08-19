@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero">
+  <Attack>
+    <Melee>
+      <AttackName>Dagger</AttackName>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">MercenaryCamp Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/heroes/spart_hero_gorgo_1
+    units/heroes/spart_hero_gorgo_2
+  </Auras>
+  <Health>
+    <Max op="add">200</Max>
+  </Health>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <SpecificName>Queen Gorgo</SpecificName>    
+    <Phenotype>female</Phenotype>
+    <Icon>units/spart/hero_gorgo.png</Icon>
+    <Classes datatype="tokens">Woman</Classes>
+    <History>Gorgo was a Spartan woman and wife to King Leonidas I (r. 489–480 BC). She was the daughter and the only known child of Cleomenes I, Leonidas' half-brother and King of Sparta (r. 520–490 BC). Gorgo was also the mother of King Pleistarchus, her only son with King Leonidas I. She is notably one of the few female historical figures actually named by Herodotus, and is depicted in sources as intelligent and wise. Her birth date is uncertain, but based on Herodotus' dating, it is most likely to have been between 518 and 508 BC.
+
+Spartan women such as Gorgo were ultimately expected to produce strong Spartan offspring, and to that end, partook in a physical-education curriculum similar to their male peers. As part of this curriculum, Gorgo would have learned sports such as running, discus and javelin throwing, and wrestling. Gorgo would not only have been taught these sports, but also competed against her peers in various contests. The belief was that if both parents were physically strong, their child would be, as well.
+
+In addition to her physical education, Gorgo would have been educated in academic matters. As an elite woman, she would have been taught how to read and write. She would also have received an education in the arts, including music, dance, and poetry. The academic curriculum of Spartan women was notably at least equivalent, if not superior, to that of Spartan males. Because of this physical and mental training, Plutarch attributes an anecdote to Gorgo in which a foreign woman notes, “You Spartan women are the only ones who rule their men.” To which Gorgo replies, “Yes, we are the only ones who give birth to men.”
+    </History>
+    <Requirements>
+      <Techs datatype="tokens">spartans/unlock_gorgo -phase_village</Techs>
+    </Requirements>
+  </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/star.png</MainTexture>
+        <MainTextureMask>128x128/star_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <walk>actor/human/movement/walk.xml</walk>
+      <run>actor/human/movement/run.xml</run>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{phenotype}_death.xml</death>
+      <build>resource/construction/con_wood.xml</build>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_tree>resource/lumbering/lumbering.xml</gather_tree>
+      <gather_rock>resource/mining/pickaxe.xml</gather_rock>
+      <gather_ore>resource/mining/mining.xml</gather_ore>
+      <gather_ruins>resource/mining/mining.xml</gather_ruins>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Gorgo</Category>
+    <MatchLimit>1</MatchLimit>
+  </TrainingRestrictions>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.85</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>units/spartans/hero_support_gorgo.xml</Actor>
+  </VisualActor>
+</Entity>

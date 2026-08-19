@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion">
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>100</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="4.0" depth="6.75"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Health>
+    <Max>220</Max>
+  </Health>
+  <Identity>
+    <GenericName>Champion Cavalry</GenericName>
+    <Classes datatype="tokens">FastMoving</Classes>
+    <VisibleClasses datatype="tokens">Cavalry Horse</VisibleClasses>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>5</TurnRate>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <death>actor/fauna/death/death_horse.xml</death>
+      <trained>interface/alarm/alarm_create_cav.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
+  <UnitAI>
+    <CheeringTime>5000</CheeringTime>
+    <Formations datatype="tokens">
+      special/formations/wedge
+    </Formations>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.5</WalkSpeed>
+    <Weight op="mul">2</Weight>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+</Entity>

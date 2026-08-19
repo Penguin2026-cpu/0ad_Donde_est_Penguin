@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_cavalry">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>30.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>60.0</MaxRange>
+      <MinRange>0.0</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>1.5</Spread>
+        <Gravity>30.0</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RestrictedClasses datatype="tokens">Permanent</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+      <Bonuses>
+        <BonusPrimary>
+          <Classes>Infantry Melee</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusPrimary>
+        <ElephantStench>
+          <Classes>Elephant</Classes>
+          <Multiplier>0.5</Multiplier>
+        </ElephantStench>
+        <CamelStench>
+          <Classes>Camel</Classes>
+          <Multiplier>0.5</Multiplier>
+        </CamelStench>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <VisibleClasses datatype="tokens">Ranged Archer</VisibleClasses>
+    <GenericName>Hero Archer Cavalry</GenericName>
+    <Tooltip>Traits: Fast Speed, Harassment.
+Strong Against: Pike Infantry, Spear Infantry, Sword Infantry.
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>7</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+</Entity>

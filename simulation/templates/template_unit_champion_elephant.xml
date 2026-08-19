@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion">
+  <Auras datatype="tokens">
+    units/elephant_fear
+  </Auras>
+  <Cost>
+    <Population>4</Population>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <food>200</food>
+      <coin>150</coin>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Circle radius="3.5"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Elephant</VisibleClasses>
+    <GenericName>War Elephant</GenericName>
+    <Icon>gaia/fauna_elephant_african_bush_1.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>3</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>5</Hack>
+        <Pierce>12</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceGatherer disable=""/>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/elephant_select.xml</select>
+      <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack_move>actor/fauna/animal/elephant_attack_order.xml</order_attack_move>
+      <order_attack>actor/fauna/animal/elephant_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
+      <walk>actor/mounted/movement/walk.xml</walk>
+      <run>actor/mounted/movement/walk.xml</run>
+      <death>actor/fauna/animal/elephant_death.xml</death>
+      <trained>actor/fauna/animal/elephant_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.75</WalkSpeed>
+    <Weight op="mul">5</Weight>
+  </UnitMotion>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+</Entity>

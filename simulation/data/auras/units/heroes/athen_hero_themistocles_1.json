@@ -1,0 +1,10 @@
+{
+	"type": "garrison",
+	"affects": ["Ship"],
+	"affectedPlayers": ["Player", "MutualAlly"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 3 }
+	],
+	"auraName": "Navarchos",
+	"auraDescription": "When garrisoned inside a ship, his ship has +200% health."
+}

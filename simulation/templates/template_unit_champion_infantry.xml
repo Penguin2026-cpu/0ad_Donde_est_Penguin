@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion">
+  <Auras datatype="tokens">
+    units/ram_garrison
+  </Auras>
+  <Cost>
+    <Population>2</Population>
+    <BuildTime>18</BuildTime>
+    <Resources>
+      <food>75</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <coin>75</coin>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>160</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
+    <GenericName>Champion Infantry</GenericName>
+  </Identity>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/arrow.png</MainTexture>
+        <MainTextureMask>128x128/arrow_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <trained>interface/alarm/alarm_create_infantry.xml</trained>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <walk>actor/human/movement/walk.xml</walk>
+      <run>actor/human/movement/walk.xml</run>
+      <attack>attack/weapon/sword.xml</attack>
+      <death>actor/human/death/{phenotype}_death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+</Entity>

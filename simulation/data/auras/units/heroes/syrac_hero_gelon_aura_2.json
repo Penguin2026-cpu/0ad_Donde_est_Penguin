@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["CitizenSoldier+Infantry"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 1.1 }
+	],
+	"auraName": "Deinomenid Elitism",
+	"auraDescription": "Citizen Infantry +10% training time."
+}

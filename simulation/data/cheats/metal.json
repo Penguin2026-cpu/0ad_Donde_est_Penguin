@@ -1,0 +1,9 @@
+{
+	"Name": "master of puppets",
+	"Data": {
+		"Action": "addresource",
+		"Type": "metal",
+		"DefaultParameter": 1000,
+		"isNumeric": true
+	}
+}

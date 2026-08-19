@@ -1,0 +1,35 @@
+{
+	"genericName": "Signal Fires",
+	"specificName": {
+		"imp": "Signum Ignis",
+		"rome": "Signum Ignis",
+		"spart": "Photiá Síma",
+		"athen": "Photiá Síma",
+		"sele": "Photiá Síma",
+		"ptol": "Photiá Síma",
+		"hele": "Photiá Síma",
+		"brit": "Arwydd tân"
+	},
+	"description": "Outposts gain greater vision for better scouting.",
+	"cost": {
+		"wood": 100,
+		"glory": 100
+	},
+	"requirements": { "all": [
+		{ "tech": "phase_village" },
+		{ "all": [
+			{ "notciv": "scyth" },
+			{ "notciv": "xion" },
+			{ "notciv": "huns" },
+			{ "notciv": "parth" }]
+		}
+	]},
+	"icon": "signal_fires.png",
+	"researchTime": 40,
+	"tooltip": "Outposts +33% Vision Range.",
+	"modifications": [
+		{ "value": "Vision/Range", "multiply": 1.33 }
+	],
+	"affects": ["Outpost"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

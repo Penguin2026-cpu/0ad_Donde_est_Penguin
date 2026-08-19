@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Soldier Ranged"],
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"auraName": "Innovative Tactics",
+	"auraDescription": "Ranged Infantry and Ranged Cavalry +25% health.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

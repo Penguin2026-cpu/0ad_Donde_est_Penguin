@@ -1,0 +1,49 @@
+{
+	"genericName": "Religious Festival",
+	"specificName": {
+		"hele": "Olympic Games",
+		"mace": "Olympic Games",
+		"spart": "Olympic Games",
+		"athen": "Panathenaia",
+		"sele": "Apollonian Games",
+		"theb": "Delphic Games"
+	},
+	"description": "Cultural events utilizing religion were important to ancient societies.",
+	"cost": {
+		"food": 800,
+		"glory": 800
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "han" },
+					{ "notciv": "iber" },
+					{ "notciv": "kush" },
+					{ "notciv": "maur" },
+					{ "notciv": "pers" },
+					{ "notciv": "ptol" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sueb" },
+					{ "notciv": "xion" },
+					{ "notciv": "zapo" },
+					{ "notciv": "rome" },
+					{ "notciv": "imp" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "games.png",
+	"researchTime": 60,
+	"tooltip": "More cultural happiness means capturable Units and Buildings +50% capture points.",
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 }
+	],
+	"affects": ["Civic Structure", "Unit"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

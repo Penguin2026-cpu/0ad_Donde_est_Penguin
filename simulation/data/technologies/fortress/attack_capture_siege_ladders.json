@@ -1,0 +1,42 @@
+{
+	"genericName": "Siege Ladders",
+	"description": "Siege ladders are a necessary component of any siege.",
+	"cost": {
+		"wood": 700,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "cart" },
+					{ "notciv": "epir" },
+					{ "notciv": "han" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "pers" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "siege_ladders.png",
+	"researchTime": 40,
+	"tooltip": "Soldiers +20% capture attack.",
+	"modifications": [
+		{ "value": "Attack/Capture/Capture", "multiply": 1.20 }
+	],
+	"affects": ["Unit Soldier"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

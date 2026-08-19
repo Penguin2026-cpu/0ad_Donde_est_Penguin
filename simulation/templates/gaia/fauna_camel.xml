@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_skittish">
+  <Footprint replace="">
+    <Square width="2.5" depth="5.0"/>
+    <Height>3.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>gaia</Civ>
+    <GenericName>Dromedary Camel</GenericName>
+    <SpecificName>Camelus dromedarius</SpecificName>
+    <VisibleClasses datatype="tokens">
+      Camel
+    </VisibleClasses>
+    <Icon>gaia/fauna_camel_arabian.png</Icon>
+  </Identity>
+  <Position>
+    <Anchor>pitch</Anchor>
+  </Position>
+  <ResourceSupply>
+    <Max>200</Max>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/camel_select.xml</select>
+      <order_walk>actor/fauna/movement/camel_order.xml</order_walk>
+      <death>actor/fauna/death/death_camel.xml</death>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed>3.0</WalkSpeed>
+    <RunMultiplier>3.0</RunMultiplier>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/camel.xml</Actor>
+  </VisualActor>
+</Entity>

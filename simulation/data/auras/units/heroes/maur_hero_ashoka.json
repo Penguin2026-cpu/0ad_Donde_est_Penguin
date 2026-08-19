@@ -1,0 +1,11 @@
+{
+	"type": "range",
+	"radius": 30,
+	"affects": ["Archer", "Catapult"],
+	"modifications": [
+		{ "value": "Attack/Ranged/Projectile/Spread", "replace": 0 }
+	],
+	"auraDescription": "Archers and Catapults 100% accuracy.",
+	"auraName": "Conquest of Kalinga",
+	"overlayIcon": "art/textures/ui/session/auras/accuracy_bonus.png"
+}

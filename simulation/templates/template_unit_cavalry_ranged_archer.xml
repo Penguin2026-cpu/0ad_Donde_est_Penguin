@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged">
+  <Attack>
+    <Ranged>
+      <AttackName>Arrow</AttackName>
+      <Damage>
+        <Hack>0.0</Hack>
+        <Pierce>15.0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>50.0</MaxRange>
+      <Projectile>
+        <Speed>50.0</Speed>
+        <Spread>2.0</Spread>
+        <Gravity>30.0</Gravity>
+      </Projectile>
+      <Bonuses>
+        <BonusPrimary>
+          <Classes>Infantry Melee</Classes>
+          <Multiplier>1.5</Multiplier>
+        </BonusPrimary>
+      </Bonuses>
+    </Ranged>
+  </Attack>
+  <Cost>
+    <Resources>
+      <food>60</food>
+      <wood>60</wood>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Archer</VisibleClasses>
+    <GenericName>Archer Cavalry</GenericName>
+    <Tooltip>Traits: Long Range, Fast Speed, Light Armor, Harassment.
+Strong Against: Pike Infantry (1.5x), Spear Infantry (1.5x), Sword Infantry (1.5x).
+Weak Against: Javelin Infantry, Sword Cavalry, Elephants, Camels.</Tooltip>
+  </Identity>
+</Entity>

@@ -1,0 +1,24 @@
+{
+	"supersedes": "forge/pair_techs_01",
+	"genericName": "Goldsmithing",
+	"description": "The Scythians were reknown for their skilled goldsmithing, with archaeological finds ranging across Eurasia.",
+	"cost": {
+		"metal": 400,
+		"glory": 200
+	},
+	"requirements": { 
+		"all": [
+			{ "tech": "phase_town" },
+			{ "civ": "scyth" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires “Forging” or “Metallurgy.”",
+	"icon": "goldsmithing.png",
+	"researchTime": 40,
+	"tooltip": "Traders +25% trade profit per trip.",
+	"modifications": [
+		{ "value": "Trader/GainMultiplier", "multiply": 1.25 }
+	],
+	"affects": ["Trader"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

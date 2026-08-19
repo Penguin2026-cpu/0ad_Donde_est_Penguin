@@ -1,0 +1,9 @@
+{
+	"Name": "a mountain out of a mole hill",
+	"Data": {
+		"Action": "addresource",
+		"Type": "stone",
+		"DefaultParameter": 1000,
+		"isNumeric": true
+	}
+}

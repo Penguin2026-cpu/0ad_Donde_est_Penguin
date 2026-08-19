@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/kush_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>noba</Civ>
+    <GenericName>Nobas</GenericName>
+    <Icon>emblems/nobas.png</Icon>
+  </Identity>
+</Entity>

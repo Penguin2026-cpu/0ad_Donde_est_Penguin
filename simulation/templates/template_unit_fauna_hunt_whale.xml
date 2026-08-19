@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna">
+  <Footprint replace="">
+    <Square width="7.0" depth="28.0"/>
+    <Height>2.5</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+    <Unhealable>true</Unhealable>
+  </Health>
+  <Identity>
+    <Classes datatype="tokens">SeaCreature</Classes>
+    <Civ>gaia</Civ>
+    <GenericName>Cetacean</GenericName>
+    <Tooltip>Kill, then collect food from this bountiful oceanic resource.</Tooltip>
+    <Icon>gaia/fauna_whale.png</Icon>
+  </Identity>
+  <Obstruction>
+    <BlockMovement>false</BlockMovement>
+  </Obstruction>
+  <Position>
+    <Floating>true</Floating>
+    <FloatDepth>0.0</FloatDepth>
+  </Position>
+  <ResourceSupply>
+    <KillBeforeGather>true</KillBeforeGather>
+    <Max>5000</Max>
+    <Type>food.fish</Type>
+    <MaxGatherers>5</MaxGatherers>
+  </ResourceSupply>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x512/cartouche.png</MainTexture>
+        <MainTextureMask>128x512/cartouche_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <StatusBars>
+    <BarWidth>4.0</BarWidth>
+    <BarHeight>0.666</BarHeight>
+    <HeightOffset>5.0</HeightOffset>
+  </StatusBars>
+  <UnitAI>
+    <DefaultStance>skittish</DefaultStance>
+    <RoamDistance>60.0</RoamDistance>
+    <FleeDistance>60.0</FleeDistance>
+    <RoamTimeMin>100000</RoamTimeMin>
+    <RoamTimeMax>300000</RoamTimeMax>
+    <FeedTimeMin>1</FeedTimeMin>
+    <FeedTimeMax>2</FeedTimeMax>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>ship-small</PassabilityClass>
+    <WalkSpeed>5.0</WalkSpeed>
+    <Weight op="mul">5</Weight>
+  </UnitMotion>
+</Entity>

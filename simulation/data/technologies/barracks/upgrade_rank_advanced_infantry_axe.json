@@ -1,0 +1,56 @@
+{
+	"genericName": "Advanced Citizen Axe Infantry",
+	"specificName": {
+		"hele": "Metikoi",
+		"mace": "Metikoi",
+		"spart": "Metikoi",
+		"athen": "Metikoi"
+	},
+	"description": "Upgrade all of your citizen axemen to Advanced rank.",
+	"cost": {
+		"food": 500,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "athen" },
+					{ "notciv": "brit" },
+					{ "notciv": "cart" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "pers" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "sele" },
+					{ "notciv": "spart" },
+					{ "notciv": "syrac" },
+					{ "notciv": "theb" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "Upgrade all of your Citizen Axe Infantry to advanced rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%. Unlocks “Elite Citizen Axe Infantry” technology.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Axe Infantry Basic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

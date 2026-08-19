@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <BuildRestrictions>
+    <Category>Barracks</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>100</BuildTime>
+    <Resources>
+      <stone>300</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="19.0" depth="19.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">
+      Infantry+Melee
+      Minister
+      Teacher
+    </List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Infantry Barracks</GenericName>
+    <SpecificName>Infantry Barracks</SpecificName>
+    <Tooltip>Train Melee Citizen-infantry. Research training improvements for melee infantry.</Tooltip>
+    <VisibleClasses datatype="tokens">
+      Village
+      Barracks
+    </VisibleClasses>
+    <Icon>structures/barracks.png</Icon>
+    <Requirements><Techs datatype="tokens">phase_village</Techs></Requirements>
+  </Identity>
+  <Loot>
+    <xp>300</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>300</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="17.0" depth="17.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      barracks/training_01
+      barracks/training_02
+      barracks/training_03
+      barracks/tradition_hoplite
+      barracks/upgrade_rank_advanced_hoplites
+      barracks/upgrade_rank_elite_hoplites
+      barracks/upgrade_rank_advanced_infantry_melee
+      barracks/upgrade_rank_elite_infantry_melee
+      barracks/upgrade_rank_advanced_infantry_spear
+      barracks/upgrade_rank_elite_infantry_spear
+      barracks/upgrade_rank_advanced_infantry_pike
+      barracks/upgrade_rank_elite_infantry_pike
+      barracks/upgrade_rank_advanced_infantry_sword
+      barracks/upgrade_rank_elite_infantry_sword
+      barracks/upgrade_rank_advanced_infantry_axe
+      barracks/upgrade_rank_elite_infantry_axe
+      unlock_champions
+      spartans/speed_tyrtean_paeans
+      spartans/special_agoge
+      spartans/special_krypteia
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_barracks.xml</select>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <upgraded>interface/complete/building/complete_barracks.xml</upgraded>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>36</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <Entities datatype="tokens">
+      units/{civ}/infantry_scout
+      units/{civ}/infantry_spearman_b
+      units/{civ}/infantry_hoplite_b
+      units/{civ}/infantry_pikeman_b
+      units/{civ}/infantry_pikeman_mace_b
+      units/{civ}/infantry_swordsman_b
+      units/{civ}/infantry_axeman_b
+      units/{civ}/champion_infantry_hoplite_barracks
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/spartans/barracks.xml</Actor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

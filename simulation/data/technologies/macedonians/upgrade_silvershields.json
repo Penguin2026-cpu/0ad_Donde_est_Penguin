@@ -1,0 +1,22 @@
+{
+	"genericName": "Silver Shields Regiment",
+	"specificName": {
+		"mace": "Basilikí̱ Argyraspidès"
+	},
+	"description": "The Silver Shields, or Argyraspidai, were the elite heavy infantry arm of the Macedonian army.",
+	"cost": {
+		"glory": 400,
+		"metal": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "mace" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "silvershields.png",
+	"researchTime": 40,
+	"tooltip": "Unlock training the Silver Shield Champion at the Fortress and unlock the ability for Shield Bearer Champion to upgrade to more powerful Silver Shield Champion for a cost.",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

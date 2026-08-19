@@ -1,0 +1,28 @@
+{
+	"pair": "mauryas/pair_ranged",	
+	"genericName": "Poison Arrows",
+	"cost": {
+		"metal": 600,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "maur" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "arrow_poison.png",
+	"researchTime": 60,
+	"tooltip": "All Archer units +15% attack bonus vs. Infantry and Support units.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Bonuses/BonusInfantry/Multiplier", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Bonuses/BonusSupport/Multiplier", "multiply": 1.15 }
+		],
+	"affects": ["Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,29 @@
+{
+	"pair": "temple/pair_heal_02",
+	"genericName": "Ritual Sacrifice",
+	"specificName": {
+		"hele": "Sphagia",
+		"mace": "Sphagia",
+		"spart": "Sphagia",
+		"athen": "Sphagia",
+		"imp": "Sacrificium",
+		"rome": "Sacrificium"
+	},
+	"description": "Increases the healing range of all healers.",
+	"cost": {
+		"coin": 300,
+		"glory": 300
+	},
+	"requirements": {
+		"tech": "phase_city"
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "sacrificial_animal.png",
+	"researchTime": 40,
+	"tooltip": "Healers +4 Healing Range.",
+	"modifications": [
+		{ "value": "Heal/Range", "add": 4.0 }
+	],
+	"affects": ["Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

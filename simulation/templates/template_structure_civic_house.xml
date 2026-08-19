@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic">
+  <BuildRestrictions>
+    <Category>HouseSmall</Category>
+  </BuildRestrictions>
+  <Capturable>
+    <CapturePoints>100</CapturePoints>
+  </Capturable>
+  <Cost>
+    <BuildTime>30</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="16.0" depth="16.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>3</Max>
+    <BuffHeal>0</BuffHeal>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support+!Elephant Minister</List>
+    <LoadingRange>1</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>200</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_3x3</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>House</GenericName>
+    <SpecificName>House</SpecificName>
+    <Tooltip>Increase the population limit.</Tooltip>
+    <History>Housing has been an important element for human survival for tens of thousands of years. Little is known about the earliest origin of the house and its interior, however it can be traced back to the simplest form of shelters. An exceptionally well-preserved house dating to the fifth millennium BC and with its contents still preserved was for example excavated at Tell Madhur in Iraq. Roman architect Vitruvius' theories have claimed the first form of architecture as a frame of timber branches finished in mud, also known as the primitive hut. In Ancient Rome, the domus (plural domūs, genitive domūs or domī) was the type of town house occupied by the upper classes and some wealthy freedmen during the Republican and Imperial eras.</History>
+    <Classes datatype="tokens">-ConquestCritical CaptureResistant</Classes>
+    <VisibleClasses datatype="tokens">Village House</VisibleClasses>
+    <Icon>structures/house.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>100</xp>
+    <food>0</food>
+    <wood>0</wood>
+    <stone>0</stone>
+    <metal>0</metal>
+    <glory>100</glory>
+  </Loot>
+  <Obstruction>
+    <Static width="14.0" depth="14.0"/>
+  </Obstruction>
+  <Population>
+    <Bonus>10</Bonus>
+  </Population>
+  <Researcher>
+    <Technologies datatype="tokens">
+      house/health_citizens_01
+      house/pop_house_01
+      romans/pop_house_insulae
+      spartans/spartan_women
+    </Technologies>
+  </Researcher>
+  <ResourceTrickle>
+    <Rates>
+      <glory>0</glory>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_house.xml</select>
+      <constructed>interface/select/building/sel_house.xml</constructed>
+      <upgraded>interface/select/building/sel_house.xml</upgraded>
+      <death>attack/destruction/building_collapse_large.xml</death>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <BarWidth>6.0</BarWidth>
+    <BarHeight>0.6</BarHeight>
+    <HeightOffset>8.0</HeightOffset>
+  </StatusBars>
+  <TerritoryDecay>
+    <DecayRate>300</DecayRate>
+  </TerritoryDecay>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>16</Radius>
+    <Weight>20000</Weight>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.9</BatchTimeModifier>
+  </Trainer>
+  <Vision>
+    <Range>20</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_3x3.xml</FoundationActor>
+  </VisualActor>
+</Entity>

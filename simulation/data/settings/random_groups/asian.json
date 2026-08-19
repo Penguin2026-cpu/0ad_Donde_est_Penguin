@@ -1,0 +1,16 @@
+{
+	"Title": "Asian",
+	"Code": "asia",
+	"GUIOrder": 1,
+	"Tooltip": "Civilizations in Asia.",
+	"Weights": {
+		"gala": 1,
+		"han": 5,
+		"maur": 5,
+		"pers": 3,
+		"scyth": 2,
+		"sele": 1,
+		"xion": 2,
+		"yayo": 4
+	}
+}

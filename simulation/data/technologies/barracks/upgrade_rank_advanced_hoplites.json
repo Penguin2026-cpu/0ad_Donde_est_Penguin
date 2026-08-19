@@ -1,0 +1,54 @@
+{
+	"genericName": "Advanced Hoplites",
+	"specificName": {
+		"athen": "Metikoi",
+		"theb": "Metikoi",
+		"spart": "Trophimoi"
+	},
+	"description": "Upgrade all of your Citizen hoplites to Advanced rank.",
+	"cost": {
+		"wood": 400,
+		"glory": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "notciv": "brit" },
+					{ "notciv": "cimb" },
+					{ "notciv": "epir" },
+					{ "notciv": "gala" },
+					{ "notciv": "gaul" },
+					{ "notciv": "goth" },
+					{ "notciv": "han" },
+					{ "notciv": "huns" },
+					{ "notciv": "iber" },
+					{ "notciv": "imp" },
+					{ "notciv": "kush" },
+					{ "notciv": "mace" },
+					{ "notciv": "maur" },
+					{ "notciv": "noba" },
+					{ "notciv": "pers" },
+					{ "notciv": "ptol" },
+					{ "notciv": "rome" },
+					{ "notciv": "scyth" },
+					{ "notciv": "sele" },
+					{ "notciv": "sueb" },
+					{ "notciv": "xion" },
+					{ "notciv": "yayo" },
+					{ "notciv": "zapo" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "upgrade_advanced.png",
+	"researchTime": 40,
+	"tooltip": "Upgrade Citizen Hoplites to Advanced rank. This greatly increases their military prowess, but also increases their training costs and training time by +10%. Unlocks Elite Hoplites technology.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Citizen Infantry Hoplite Basic"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

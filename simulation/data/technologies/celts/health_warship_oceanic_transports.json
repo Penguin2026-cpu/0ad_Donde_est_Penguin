@@ -1,0 +1,35 @@
+{
+	"supersedes": "celts/unlock_warships",
+	"genericName": "Oceanic Transports",
+	"description": "The Celtic and Indian peoples were known for partaking in long journeys by sea in order to colonize new lands.",
+	"cost": {
+		"wood": 300,
+		"glory": 200
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_town" },
+			{ "tech": "celts/unlock_warships" },
+			{ 
+				"any": [
+					{ "civ": "celti" },
+					{ "civ": "brit" },
+					{ "civ": "gala" },
+					{ "civ": "gaul" },
+					{ "civ": "iber" },
+					{ "civ": "lusi" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Town Phase. Requires “Naval Construction.”",
+	"icon": "armor_ship_silver.png",
+	"researchTime": 40,
+	"tooltip": "Arrow Ships +10 garrison capacity and +25% health.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.25 },
+		{ "value": "GarrisonHolder/Max", "add": 10 }
+	],
+	"affects": ["ArrowShip"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

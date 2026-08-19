@@ -1,0 +1,29 @@
+{
+	"pair": "mauryas/pair_ranged",	
+	"genericName": "Steel Arrows",
+	"description": "Add something here.",
+	"cost": {
+		"metal": 600,
+		"glory": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "maur" }
+				]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "accuracy_bolt.png",
+	"researchTime": 60,
+	"tooltip": "All Archer units +15% attack bonus vs. Cavalry and Elephants.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Bonuses/BonusCavalry/Multiplier", "multiply": 1.15 },
+		{ "value": "Attack/Ranged/Bonuses/BonusElephant/Multiplier", "multiply": 1.15 }
+		],
+	"affects": ["Archer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

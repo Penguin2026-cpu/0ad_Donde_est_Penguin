@@ -1,0 +1,32 @@
+{
+	"genericName": "Nisean War Horses",
+	"specificName": {
+		"pers": "Nisioi",
+		"sele": "Nisioi"
+	},
+	"description": "The now-extinct Nisian breed of horse was one of the largest and robust horses of ancient times. They were highly sought after by the Seleucids and Persians as both riders and mounts gained heavier armor as time progressed.",
+	"cost": {
+		"food": 400,
+		"coin": 400
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "any": [
+				{ "civ": "sele" },
+				{ "civ": "pers" }]
+			}
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "nisean_war_horses.png",
+	"researchTime": 30,
+	"tooltip": "Champion and Elite Cavalry +20% health and +10% speed, but also +20% train time.",
+	"modifications": [
+		{ "value": "Health/Max", "multiply": 1.2 },
+		{ "value": "UnitMotion/WalkSpeed", "multiply": 1.1 },
+		{ "value": "Cost/BuildTime", "multiply": 1.2 }
+	],
+	"affects": ["Champion Cavalry Spear", "Elite Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit">
+  <Attack>
+    <Capture>
+      <AttackName>Capture</AttackName>
+      <Capture>5</Capture>
+      <MaxRange>4</MaxRange>
+      <RepeatTime>2000</RepeatTime>
+      <RestrictedClasses datatype="tokens">CaptureResistant</RestrictedClasses>
+    </Capture>
+    <Slaughter>
+      <AttackName>Slaughter</AttackName>
+      <Damage>
+        <Hack>200.0</Hack>
+      </Damage>
+      <MaxRange>4.0</MaxRange>
+      <PrepareTime>900</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <RestrictedClasses datatype="tokens">!Domestic</RestrictedClasses>
+    </Slaughter>
+  </Attack>
+  <Auras datatype="tokens">
+    units/slave_ownership
+  </Auras>
+  <Cost>
+    <Population>3</Population>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>70</food>
+    </Resources>
+  </Cost>
+  <Footprint replace="">
+    <Square width="3.5" depth="6"/>
+    <Height>7.5</Height>
+  </Footprint>
+  <Identity>
+    <Classes datatype="tokens">CitizenSoldier Organic Human FastMoving</Classes>
+    <VisibleClasses datatype="tokens">Cavalry Horse Citizen Soldier</VisibleClasses>
+    <GenericName>Cavalry</GenericName>
+    <Rank>Basic</Rank>
+    <Requirements>
+      <Techs datatype="tokens">phase_town</Techs>
+    </Requirements>
+  </Identity>
+  <Loot>
+    <xp>150</xp>
+    <glory>5</glory>
+  </Loot>
+  <Position>
+    <Anchor>pitch</Anchor>
+    <TurnRate>5</TurnRate>
+  </Position>
+  <RangeVisualization disable=""/>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>6</Pierce>
+        <Crush>5</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <ResourceTrickle>
+    <Rates>
+      <food>0</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+      <coin>0</coin>
+      <glory>0</glory>
+    </Rates>
+    <Interval>10000</Interval>
+  </ResourceTrickle>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x256/ellipse.png</MainTexture>
+        <MainTextureMask>128x256/ellipse_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
+      <order_attack_move>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack_move>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <attack_impact_ranged>attack/impact/arrow_all.xml</attack_impact_ranged>
+      <attack_melee>attack/weapon/sword.xml</attack_melee>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+      <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
+      <death>actor/fauna/death/death_horse.xml</death>
+      <trained>interface/alarm/alarm_create_cav.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>6.5</HeightOffset>
+  </StatusBars>
+  <UnitAI>
+    <CheeringTime>5000</CheeringTime>
+    <Formations datatype="tokens">
+      special/formations/wedge
+    </Formations>
+  </UnitAI>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <Weight op="mul">2</Weight>
+  </UnitMotion>
+  <Vision>
+    <Range>50</Range>
+  </Vision>
+  <VisionSharing>
+    <Bribable>true</Bribable>
+  </VisionSharing>
+</Entity>

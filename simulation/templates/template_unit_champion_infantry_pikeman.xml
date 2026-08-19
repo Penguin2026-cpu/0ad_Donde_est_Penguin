@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Pike</AttackName>
+      <Damage>
+        <Hack>20</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>7</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <RestrictedClasses datatype="tokens">Permanent Ship</RestrictedClasses>
+      <PreferredClasses datatype="tokens">Soldier</PreferredClasses>
+      <Bonuses>
+        <BonusCavMelee>
+          <Classes>Cavalry</Classes>
+          <Multiplier>2.0</Multiplier>
+        </BonusCavMelee>
+      </Bonuses>
+    </Melee>
+  </Attack>
+  <Auras datatype="tokens">
+    units/massed_pikes
+  </Auras>
+  <Cost>
+    <Resources>
+      <coin>75</coin>
+    </Resources>
+  </Cost>
+  <Identity>
+    <VisibleClasses datatype="tokens">Melee Spear Pike</VisibleClasses>
+    <GenericName>Champion Pike Infantry</GenericName>
+    <Tooltip>Traits: Slow Speed, Heavy Armor, Weak Attack.
+Strong Against: All Cavalry (2x).
+Weak Against: Ranged Units, Sword Infantry.</Tooltip>
+  </Identity>
+  <Position>
+    <TurnRate>5</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>8</Pierce>
+        <Crush>8</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/syntagma
+    </Formations>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.75</WalkSpeed>
+  </UnitMotion>
+</Entity>

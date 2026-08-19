@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Identity>
+    <Civ>hele</Civ>
+    <GenericName>Greeks</GenericName>
+    <Icon>emblems/256x256/greeks.png</Icon>
+  </Identity>
+  <Player>
+    <Formations datatype="tokens">
+      special/formations/phalanx
+    </Formations>
+  </Player>
+</Entity>

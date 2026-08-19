@@ -1,0 +1,21 @@
+{
+	"genericName": "Royal Bodyguards",
+	"specificName": {
+		"mace": "Basilikí̱ So̱matophýlakes"
+	},
+	"cost": {
+		"glory": 500,
+		"coin": 500
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_empire" },
+			{ "civ": "mace" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in Empire Phase.",
+	"icon": "hero_face.png",
+	"researchTime": 40,
+	"tooltip": "Allow “Companion Cavalry” Champions to upgrade to more powerful “Royal Bodyguards” for a small cost.",
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

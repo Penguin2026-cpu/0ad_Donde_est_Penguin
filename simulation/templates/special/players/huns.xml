@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_player">
+  <Auras datatype="tokens">
+    teambonuses/huns_player_teambonus
+  </Auras>
+  <Identity>
+    <Civ>huns</Civ>
+    <GenericName>Huns</GenericName>
+    <History>The Huns are the consummate rushing faction.</History>
+    <Icon>emblems/256x256/xiongnu.png</Icon>
+  </Identity>
+</Entity>
