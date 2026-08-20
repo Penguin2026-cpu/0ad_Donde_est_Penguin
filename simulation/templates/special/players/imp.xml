@@ -12,6 +12,7 @@
   <Player>
     <Formations datatype="tokens">
       special/formations/testudo
+	  special/formations/phalanx
     </Formations>
   </Player>
 </Entity>
