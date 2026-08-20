@@ -11,9 +11,12 @@
   </Resistance>
   	    <UnitAI>
     <Formations datatype="tokens">
+	  special/formations/shield_wall
       special/formations/phalanx
 	  special/formations/shield_wall
 	  special/formations/testudo
+	  special/formations/syntagma
+	  special/formations/roman_shield_wall
     </Formations>
   </UnitAI>
   <Attack>
@@ -52,7 +55,7 @@ Weak Against: Ranged Units, Sword Infantry.</Tooltip>
         <glory>200</glory>
         <metal>200</metal>
       </Cost>
-      <Time>50</Time>
+      <Time>10</Time>
     </Tower>
   </Upgrade>
   <VisualActor>

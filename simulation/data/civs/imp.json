@@ -24,7 +24,7 @@
 			"Type": "peace"
 		},
 		{
-			"File": "psalm135.ogg",
+			"File": "psalm_135.ogg",
 			"Type": "peace"
 		},
 		{
@@ -37,6 +37,18 @@
 		},
 		{
 			"File": "legio_germania.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "hikanatoi.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Boulgaro.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Sons_of_mars.ogg",
 			"Type": "peace"
 		}
 	],
