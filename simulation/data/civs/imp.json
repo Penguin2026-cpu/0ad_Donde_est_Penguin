@@ -18,7 +18,27 @@
 		{
 			"File": "The_Governor.ogg",
 			"Type": "peace"
-		}
+		},
+		{
+			"File": "Rome_Music.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "psalm135.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "byzantine.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Rome_Music.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "legio_germania.ogg",
+			"Type": "peace"
+		},
 	],
 	"CivBonuses":
 	[
