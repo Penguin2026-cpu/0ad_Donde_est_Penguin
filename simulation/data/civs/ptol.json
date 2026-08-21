@@ -22,7 +22,10 @@
 		{
 			"File": "Along_the_Nile.ogg",
 			"Type": "peace"
-		}
+		},
+		{
+			"File": "Song_Of_Egypt.ogg",
+			"Type": "peace"
 	],
 	"CivBonuses":
 	[
