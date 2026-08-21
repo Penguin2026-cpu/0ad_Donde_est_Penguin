@@ -50,6 +50,18 @@
 		{
 			"File": "Sons_of_mars.ogg",
 			"Type": "peace"
+		},
+		{
+			"File": "Legio_VI.ogg", 
+			"Type": "peace"
+		},
+		{
+			"File": "Tornike_Gregorian.ogg",
+			"Type": "peace"
+		}, 
+		{
+			"File": "Legio_XV",
+			"Type": "peace"
 		}
 	],
 	"CivBonuses":
