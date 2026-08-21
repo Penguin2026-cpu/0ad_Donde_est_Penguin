@@ -5,6 +5,80 @@
     <RegenRate>0</RegenRate>
     <GarrisonRegenRate>0</GarrisonRegenRate>
   </Capturable>
+  <Builder>
+    <Rate>0.75</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/military_colony
+      structures/{civ}/encampment
+      structures/{civ}/crannog
+      structures/{civ}/house
+      structures/{civ}/tenement
+      structures/{civ}/ministry
+      structures/{civ}/pyramid_1
+      structures/{civ}/pyramid_2
+      structures/{civ}/temple_vesta
+      structures/{civ}/stoa_buildable
+      structures/{civ}/ice_house
+      structures/{civ}/storehouse
+      structures/{civ}/granary
+      structures/{civ}/field
+      structures/{civ}/corral
+      structures/{civ}/dock
+      structures/{civ}/shipyard
+      structures/{civ}/market
+      structures/{civ}/pillar_ashoka
+      structures/{civ}/barracks
+      structures/{civ}/barracks_aux
+      structures/{civ}/range
+      structures/{civ}/stable
+      structures/{civ}/great_hall
+      structures/{civ}/embassy_celtic
+      structures/{civ}/embassy_iberian
+      structures/{civ}/embassy_italic
+      structures/{civ}/kennel
+      structures/{civ}/elephant_stable
+      structures/{civ}/forge
+      structures/{civ}/defense_tower
+      structures/wallset_palisade
+      structures/{civ}/wallset_palisade
+      structures/{civ}/wallset_siege
+      structures/{civ}/wallset_stone
+      structures/{native}/temple
+      structures/{civ}/temple_mars
+      structures/{civ}/temple_amun
+      structures/{native}/statue
+      structures/{native}/ball_court
+      structures/{civ}/arch
+      structures/{civ}/library
+      structures/{civ}/prytaneion
+      structures/{civ}/palace_small
+      structures/{civ}/theater
+      structures/{civ}/amphitheater
+      structures/{civ}/assembly
+      structures/{civ}/lighthouse
+      structures/{civ}/tachara
+      structures/{civ}/arsenal
+      structures/{civ}/army_camp
+      structures/{civ}/academy
+      structures/{civ}/stable_royal
+      structures/{civ}/royal_yurt
+      structures/{civ}/fortress
+      structures/{native}/wonder
+	  structures/{civ}/lighthouse_of_alexandria
+	  structures/{civ}/pyramid_of_khafre
+	  structures/{civ}/acropolis_propylaea
+	  structures/{civ}/Colosseum
+	  structures/{civ}/colossus_of_rhodes
+	  structures/{civ}/hanging_gardens
+	  structures/{civ}/mausoleum
+	  structures/{civ}/athena_parthenos_base_huge
+	  structures/{civ}/temple_of_zeus
+	  structures/{civ}/ishtar_gate
+	  structures/{civ}/palace
+	  
+    </Entities>
+  </Builder>
   <Cost>
     <Population>1</Population>
     <Resources>

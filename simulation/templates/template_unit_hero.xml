@@ -24,6 +24,80 @@
     units/heroes/hero_building
     units/heroes/hero_gathering
   </Auras>
+  <Builder>
+    <Rate>1.25</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/civil_centre
+      structures/{civ}/military_colony
+      structures/{civ}/encampment
+      structures/{civ}/crannog
+      structures/{civ}/house
+      structures/{civ}/tenement
+      structures/{civ}/ministry
+      structures/{civ}/pyramid_1
+      structures/{civ}/pyramid_2
+      structures/{civ}/temple_vesta
+      structures/{civ}/stoa_buildable
+      structures/{civ}/ice_house
+      structures/{civ}/storehouse
+      structures/{civ}/granary
+      structures/{civ}/field
+      structures/{civ}/corral
+      structures/{civ}/dock
+      structures/{civ}/shipyard
+      structures/{civ}/market
+      structures/{civ}/pillar_ashoka
+      structures/{civ}/barracks
+      structures/{civ}/barracks_aux
+      structures/{civ}/range
+      structures/{civ}/stable
+      structures/{civ}/great_hall
+      structures/{civ}/embassy_celtic
+      structures/{civ}/embassy_iberian
+      structures/{civ}/embassy_italic
+      structures/{civ}/kennel
+      structures/{civ}/elephant_stable
+      structures/{civ}/forge
+      structures/{civ}/defense_tower
+      structures/wallset_palisade
+      structures/{civ}/wallset_palisade
+      structures/{civ}/wallset_siege
+      structures/{civ}/wallset_stone
+      structures/{native}/temple
+      structures/{civ}/temple_mars
+      structures/{civ}/temple_amun
+      structures/{native}/statue
+      structures/{native}/ball_court
+      structures/{civ}/arch
+      structures/{civ}/library
+      structures/{civ}/prytaneion
+      structures/{civ}/palace_small
+      structures/{civ}/theater
+      structures/{civ}/amphitheater
+      structures/{civ}/assembly
+      structures/{civ}/lighthouse
+      structures/{civ}/tachara
+      structures/{civ}/arsenal
+      structures/{civ}/army_camp
+      structures/{civ}/academy
+      structures/{civ}/stable_royal
+      structures/{civ}/royal_yurt
+      structures/{civ}/fortress
+      structures/{native}/wonder
+	  structures/{civ}/lighthouse_of_alexandria
+	  structures/{civ}/pyramid_of_khafre
+	  structures/{civ}/acropolis_propylaea
+	  structures/{civ}/Colosseum
+	  structures/{civ}/colossus_of_rhodes
+	  structures/{civ}/hanging_gardens
+	  structures/{civ}/mausoleum
+	  structures/{civ}/athena_parthenos_base_huge
+	  structures/{civ}/temple_of_zeus
+	  structures/{civ}/ishtar_gate
+	  structures/{civ}/palace
+	  
+    </Entities>
+  </Builder>
   <Cost>
     <Population>0</Population>
     <BuildTime>20</BuildTime>
@@ -58,17 +132,47 @@
   <Resistance>
     <Entity>
       <Damage>
-        <Hack>10.0</Hack>
-        <Pierce>20.0</Pierce>
-        <Crush>15.0</Crush>
+        <Hack>25.0</Hack>
+        <Pierce>25.0</Pierce>
+        <Crush>25.0</Crush>
       </Damage>
     </Entity>
   </Resistance>
   <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Capacities>
+      <food>20</food>
+      <wood>20</wood>
+      <stone>20</stone>
+      <metal>20</metal>
+      <coin>20</coin>
+      <glory>1</glory>
+    </Capacities>
     <Rates>
-      <glory.praise>2</glory.praise>
+      <food.fruit>0.5</food.fruit>
+      <food.grain>0.25</food.grain>
+      <food.meat>0.5</food.meat>
+      <wood.tree>0.5</wood.tree>
+      <wood.ruins>5.0</wood.ruins>
+      <stone.rock>0.5</stone.rock>
+      <stone.ruins>2</stone.ruins>
+      <metal.ruins>2</metal.ruins>
+      <metal.ore>0.5</metal.ore>
+      <coin.crops>0.25</coin.crops>
     </Rates>
   </ResourceGatherer>
+  <ResourceTrickle>
+    <Rates>
+      <food>0.0</food>
+      <wood>0.0</wood>
+      <stone>0.0</stone>
+      <metal>0.0</metal>
+      <coin>10.0</coin>
+      <glory>0.0</glory>
+    </Rates>
+    <Interval>15000</Interval>
+  </ResourceTrickle>
   <Selectable replace="">
     <Overlay>
       <AlwaysVisible/>

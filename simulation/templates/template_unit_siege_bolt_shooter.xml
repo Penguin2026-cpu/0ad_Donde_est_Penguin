@@ -5,8 +5,8 @@
       <AttackName>Bolt</AttackName>
       <Damage>
         <Hack>0.0</Hack>
-        <Pierce>40.0</Pierce>
-        <Crush>10.0</Crush>
+        <Pierce>50.0</Pierce>
+        <Crush>20.0</Crush>
       </Damage>
       <MaxRange>60.0</MaxRange>
       <MinRange>8.0</MinRange>
