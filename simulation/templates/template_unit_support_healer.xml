@@ -16,7 +16,7 @@
     </Resources>
   </Cost>
   <Heal>
-    <Range>8</Range>
+    <Range>16</Range>
     <Health>5</Health>
     <Interval>2000</Interval>
     <UnhealableClasses datatype="tokens">Animal</UnhealableClasses>

@@ -6,7 +6,7 @@
       <Damage>
         <Hack>0.0</Hack>
         <Pierce>0.0</Pierce>
-        <Crush>100.0</Crush>
+        <Crush>200.0</Crush>
       </Damage>
       <MaxRange>64.0</MaxRange>
       <MinRange>16.0</MinRange>
