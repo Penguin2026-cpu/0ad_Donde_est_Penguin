@@ -18,6 +18,10 @@
 		{
 			"File": "Land_Between_Rivers.ogg",
 			"Type": "peace"
+		},
+		{
+			"File": "Achamaeid.ogg",
+			"Type": "peace"
 		}
 	],
 	"CivBonuses":

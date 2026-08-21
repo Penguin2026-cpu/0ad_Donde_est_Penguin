@@ -18,6 +18,10 @@
 		{
 			"File": "The_Pillars_of_Hercules.ogg",
 			"Type": "peace"
+		},
+		{
+			"File": "Song_Of_Cartage.ogg",
+			"Type": "peace"
 		}
 	],
 	"CivBonuses":

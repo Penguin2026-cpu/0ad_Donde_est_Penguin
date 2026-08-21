@@ -62,6 +62,10 @@
 		{
 			"File": "Legio_XV",
 			"Type": "peace"
+		},
+		{
+			"File": "Song_Of_Cartage.ogg",
+			"Type": "peace"
 		}
 	],
 	"CivBonuses":
