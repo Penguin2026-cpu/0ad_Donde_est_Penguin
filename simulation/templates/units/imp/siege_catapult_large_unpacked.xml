@@ -29,7 +29,7 @@
   </Capturable>
   <Cost>
     <BuildTime>90</BuildTime>
-    <Population>1</Population>
+    <Population>1</Population>`
     <Resources>
       <wood>400</wood>
       <stone>100</stone>

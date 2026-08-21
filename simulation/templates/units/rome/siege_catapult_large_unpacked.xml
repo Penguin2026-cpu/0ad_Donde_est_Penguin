@@ -14,9 +14,9 @@
       </Projectile>
       <Splash>
         <Damage>
-          <Hack>50.0</Hack>
+          <Hack>60.0 </Hack>
           <Pierce>0.0</Pierce>
-          <Crush>50.0</Crush>
+          <Crush>60.0</Crush>
         </Damage>
       </Splash>
     </Ranged>
@@ -25,14 +25,14 @@
     <Category>GreatBallista</Category>
   </BuildRestrictions>
   <Capturable>
-    <CapturePoints>600</CapturePoints>
+    <CapturePoints>1000</CapturePoints>
   </Capturable>
   <Cost>
     <BuildTime>90</BuildTime>
-    <Population>5</Population>
+    <Population>1</Population>`
     <Resources>
       <wood>400</wood>
-      <stone>200</stone>
+      <stone>100</stone>
     </Resources>
   </Cost>
   <Footprint replace="">
@@ -49,7 +49,6 @@
     <Requirements>
       <Techs datatype="tokens">
         -phase_city
-        arsenal/siege_packing_02
       </Techs>
     </Requirements>
   </Identity>
